@@ -17,6 +17,8 @@ Before running the project, ensure you have the following installed:
 
 ### 2️⃣ Running the Project with Docker Compose
 
-#### **1. Build the JAR file**
+#### **1. Run this command line**
 ```sh
-./gradlew build
+docker compose up -d
+```
+#### **1. import file hrs OA.postman_collection.json into postman to run APIs**
