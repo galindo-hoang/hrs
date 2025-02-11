@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "f5e7ada6-09f7-411c-91e6-f24ba2ede8e3",
+		"name": "hrs OA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21623784"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/v1/agent/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"hello\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/agent/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"agent",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/v1/agent/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"hello\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/agent/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"agent",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/hotel/create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJoZWxsbyIsInN1YiI6ImhlbGxvIiwiaWF0IjoxNzM5Mjg2MjQ1LCJleHAiOjE3MzkzMDQyNDV9.QwBLDjvmiXwwCVjD6jWerjVYJiShDwfCzNmf83wWSwM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "abab",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "10.823099",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "106.629662",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "abab",
+							"type": "text"
+						},
+						{
+							"key": "prices",
+							"value": "4.5",
+							"type": "text"
+						},
+						{
+							"key": "images",
+							"type": "file",
+							"src": [
+								"/Users/huyhoang/Desktop/Screenshot 2025-02-10 at 22.39.17.png",
+								"/Users/huyhoang/Desktop/Screenshot 2025-02-10 at 22.06.30.png"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/v1/hotel/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"hotel",
+						"create"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "testing",
+							"disabled": true
+						},
+						{
+							"key": "latitude",
+							"value": "10.823099",
+							"disabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "106.629662",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "hello world",
+							"disabled": true
+						},
+						{
+							"key": "prices",
+							"value": "4.5",
+							"disabled": true
+						},
+						{
+							"key": "images",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/v1/hotel/update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJoZWxsbyIsInN1YiI6ImhlbGxvIiwiaWF0IjoxNzM5Mjg2MjQ1LCJleHAiOjE3MzkzMDQyNDV9.QwBLDjvmiXwwCVjD6jWerjVYJiShDwfCzNmf83wWSwM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "hotelId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "10.823099",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "106.629662",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "abab",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "prices",
+							"value": "9.0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/hotel/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"hotel",
+						"update"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "testing",
+							"disabled": true
+						},
+						{
+							"key": "latitude",
+							"value": "10.823099",
+							"disabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "106.629662",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "hello world",
+							"disabled": true
+						},
+						{
+							"key": "prices",
+							"value": "4.5",
+							"disabled": true
+						},
+						{
+							"key": "images",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/hotel/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/hotel/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"hotel",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/hotel/cancel",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJoZWxsbzEiLCJzdWIiOiJoZWxsbzEiLCJpYXQiOjE3MzkyNjkzNTQsImV4cCI6MTczOTI4NzM1NH0.W6rbNb7tuTpNcBuaNErwTZFZIvWdk3EMxhgMNxA_vbY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerId\": 2,\n    \"bookingId\": 4,\n    \"reason\": \"change scheduler\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/hotel/cancel",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"hotel",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/v1/hotel/booking",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJoZWxsbyIsInN1YiI6ImhlbGxvIiwiaWF0IjoxNzM5MjY5NTAzLCJleHAiOjE3MzkyODc1MDN9.E25slZhkkL-0qYf4dz42xusBPrrcGYK3H_du4qRw7tM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"hotelId\": 1,\n    \"customerId\": 2,\n    \"dateStart\": 1739005054,\n    \"dateEnd\": 1739493054,\n    \"email\": \"hmhuy191101@gmail.com\",\n    \"phone\": \"0906892676\",\n    \"name\": \"huy\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/hotel/booking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"hotel",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
